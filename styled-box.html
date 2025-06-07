@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stylish Box</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .styled-box {
+      background-color: #ffffff;
+      border: 3px solid #4a90e2;
+      border-radius: 12px;
+      padding: 30px 40px;
+      margin: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .styled-box:hover {
+      background-color: #e6f2ff;
+      transform: scale(1.03);
+    }
+
+    .styled-box button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .styled-box button:hover {
+      background-color: #2e6fbf;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="styled-box">
+    <h2>Welcome to My Stylish Box</h2>
+    <p>This is a custom-designed box with text, a quote, and an interactive button.</p>
+    
+    <blockquote>“Creativity is intelligence having fun.” – Albert Einstein</blockquote>
+    
+    <button onclick="alert('Thanks for clicking!')">Click Me</button>
+  </div>
+
+</body>
+</html>
